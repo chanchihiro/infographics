@@ -173,7 +173,8 @@ body {
   font-size: 14px;
   font-weight: 600;
   background-color: #fff;
-  color: #222222; }
+  color: #222222;
+  -webkit-text-size-adjust: 100%; }
 
 ::-moz-selection {
   background-color: #ff0033; }
@@ -213,7 +214,7 @@ body {
     margin-top: 15px; }
   .top p {
     margin-top: 8px;
-    font-size: 36px;
+    font-size: 12px;
     padding: 3px;
     background-color: #fff;
     display: inline-block; }
