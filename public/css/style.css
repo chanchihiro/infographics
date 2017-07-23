@@ -184,6 +184,43 @@ body {
 ::-moz-selection {
   background-color: #ff0033; }
 
+.top {
+  background-color: #fff;
+  background-image: radial-gradient(#ffcd03 24%, transparent 0%), radial-gradient(#ffcd03 24%, transparent 0%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px; }
+  .top .sp-logo {
+    width: 30%;
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+  .top .sp-title {
+    width: 64%;
+    padding-top: 40px;
+    display: block;
+    margin: 0 auto; }
+  .top h1 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 1.8em;
+    padding: 3px 3px 3px 8px; }
+  .top .sp-first {
+    margin-top: 1.3em; }
+  .top p {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    padding: 3px;
+    background-color: #fff;
+    display: inline-block; }
+  .top .arrow-scroll {
+    width: 100px;
+    margin-top: 30px; }
+
 .pc-content {
   background-color: #fff;
   background-image: radial-gradient(#ffcd03 20%, transparent 0%), radial-gradient(#ffcd03 20%, transparent 0%);
@@ -209,8 +246,8 @@ body {
     font-size: 18px;
     background-color: #fff;
     display: table;
-    margin: 10px auto 0px;
-    padding: 5px; }
+    margin: 16px auto 0px;
+    padding: 5px 5px 5px 13px; }
   @media screen and (max-width: 750px) {
     .pc-content {
       display: none; } }
