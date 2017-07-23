@@ -12,27 +12,31 @@ $nicovideo: #efb10a !important;
 
 ////////// フォント
 @font-face{
-	font-family: mc-l;
-	src:url(../font/mplus-1m-light.ttf)format("opentype");
+	font-family: noto-thin;
+	src:url(../font/NotoSansCJKjp-Thin.otf)format("opentype");
 }
 ////////// フォント bold
 @font-face{
-	font-family: mc-b;
-	src:url(../font/mplus-1m-bold.ttf)format("opentype");
+	font-family: noto-light;
+	src:url(../font/NotoSansCJKjp-Light.otf)format("opentype");
 }////////// フォント regular
 @font-face{
-	font-family: mc-r;
-	src:url(../font/mplus-1m-regular.ttf)format("opentype");
+	font-family: noto-regular;
+	src:url(../font/NotoSansCJKjp-Regular.otf)format("opentype");
 }
 ////////// フォント thin
 @font-face{
-	font-family: mc-t;
-	src:url(../font/mplus-1m-thin)format("opentype");
+	font-family: noto-bold;
+	src:url(../font/NotoSansCJKjp-Bold.otf)format("opentype");
 }
 ////////// フォント light
 @font-face{
-	font-family: mc-m;
-	src:url(../font/mplus-1m-medium.ttf)format("opentype");
+	font-family: noto-medium;
+	src:url(../font/NotoSansCJKjp-Medium.otf)format("opentype");
+}
+@font-face{
+	font-family: noto-black;
+	src:url(../font/NotoSansCJKjp-Black.otf)format("opentype");
 }
 ////////// フォント 游ゴシック
 @font-face {
