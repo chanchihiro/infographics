@@ -41,19 +41,19 @@ body {
 		margin: 0 auto;
 	}
 	h1 {
-		font-size: 1.5em;
+		font-size: 20px;
 		letter-spacing: 1px;
 		background-color: #fff;
 		display: inline-block;
-		margin-top: 1.8em;
+		margin-top: 36px;
 		padding: 3px 3px 3px 8px;
 	}
 	.sp-first {
-		margin-top: 1.3em;
+		margin-top: 15px;
 	}
 	p {
-		margin-top: 0.5em;
-		font-size: 0.8em;
+		margin-top: 8px;
+		font-size: 12px;
 		padding: 3px;
 		background-color: #fff;
 		display: inline-block;
@@ -61,6 +61,9 @@ body {
 	.arrow-scroll {
 		width: 100px;
 		margin-top: 30px;
+	}
+	@include min-screen($breakpoint-mobile) {
+		display: none;
 	}
 }
 
