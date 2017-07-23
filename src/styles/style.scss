@@ -2,6 +2,7 @@
 @import "lib/base";
 @import "lib/layout";
 @import "lib/mixins"; //ブレイクポイントの設定
+@import "lib/import";
 @import "lib/community";
 
 
@@ -98,7 +99,7 @@ body {
 		margin: 16px auto 0px;
 		padding: 5px 5px 5px 13px;
 	}
-	@include max-screen($breakpoint-mobile) {
+	@include max-screen(sp) {
 		display: none;
 	}
 }

@@ -251,6 +251,6 @@ body {
     display: table;
     margin: 16px auto 0px;
     padding: 5px 5px 5px 13px; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: sp) {
     .pc-content {
       display: none; } }
