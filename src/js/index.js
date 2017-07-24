@@ -4,15 +4,17 @@ $(document).ready(function(){
 	console.log("動いてるよ！");
 	//１個目の円グラフ
 	var dataset = [
-	    {legend:"うーぴょん", value:10, color:"red"},
+	    {legend:"うーぴょん", value:10, color:"#ffcd03"},
 	    {legend:"とうよう", value:45, color:"orangered"},
-	    {legend:"ちゃんちー", value:15, color:"yellow"},
-	    {legend:"いのっち", value:70, color:"pink"},
-	    {legend:"その他", value:20, color:"purple"}
+	    {legend:"しのきん", value:15, color:"yellow"},
+	    {legend:"ちゃんちー", value:70, color:"pink"},
+	    {legend:"へむ", value:20, color:"purple"},
+	    {legend:"いのっち", value:20, color:"purple"},
+	    {legend:"げばちゃん", value:20, color:"purple"}
     ];
-	var width = 200;
-	var height = 200;
-	var radius = 80;
+	var width = 160;
+	var height = 160;
+	var radius = 60;
 	var svg = d3.select(".data-circle").append("svg")
 	    .attr("width", width)
 	    .attr("height", height)
@@ -20,7 +22,7 @@ $(document).ready(function(){
 	    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 	var arc = d3.svg.arc()
         .outerRadius(radius)
-        .innerRadius(10);
+        .innerRadius(0);
     var pie = d3.layout.pie()
         .sort(null)
         .value(function(d){ return d.value; });
@@ -36,16 +38,20 @@ $(document).ready(function(){
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .style("text-anchor", "middle")
     .text(function(d) { return d.data.legend; });
+    g.append("text2")
+    .text("合計：")
+    .attr("dy", "5")
+    .attr("dx", "-30")  // 円グラフの区切り線を白色にする
 
 	//２個目の円グラフ
 	var dataset = [
-	    {legend:"エンジニア", value:45, color:"red"},
+	    {legend:"エンジニア", value:45, color:"#ffcd03"},
 	    {legend:"デザイナー", value:10, color:"gray"},
 	    {legend:"ビジネス", value:25, color:"yellow"},
     ];
-	var width = 200;
-	var height = 200;
-	var radius = 80;
+	var width = 160;
+	var height = 160;
+	var radius = 60;
 	var svg = d3.select(".data-circle2").append("svg")
 	    .attr("width", width)
 	    .attr("height", height)
@@ -53,7 +59,7 @@ $(document).ready(function(){
 	    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 	var arc = d3.svg.arc()
         .outerRadius(radius)
-        .innerRadius(10);
+        .innerRadius(0);
     var pie = d3.layout.pie()
         .sort(null)
         .value(function(d){ return d.value; });
@@ -72,14 +78,14 @@ $(document).ready(function(){
 
 	//折れ線グラフ
     var dataset = [
-	  {x: 0, y: 0},
+	  {x: 0 , y: 0},
 	  {x: 1, y: 8},
 	  {x: 2, y: 12},
-	  {x: 3, y: 13}
+	  {x: 3, y: 22}
 	];
-	var margin = {top: 0, right: 50, bottom: 30, left: 50},
-	    width = 400 - margin.left - margin.right,
-	    height = 300 - margin.top - margin.bottom;
+	var margin = {top: 30, right: 50, bottom: 30, left: 50},
+	    width = 360 - margin.left - margin.right,
+	    height = 260 - margin.top - margin.bottom;
 	var xScale = d3.scale.linear()
 	    .domain([0, d3.max(dataset, function(d){ return d.x; })])
 	    .range([0, width]);
