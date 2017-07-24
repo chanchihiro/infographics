@@ -221,6 +221,57 @@ body {
   .top .arrow-scroll {
     width: 100px;
     margin-top: 30px; }
+  @media screen and (min-width: 750px) {
+    .top {
+      display: none; } }
+
+.nippo_histry {
+  width: 100%;
+  height: 200vh;
+  background-color: #ffcd03;
+  text-align: center; }
+  .nippo_histry img {
+    width: 200px;
+    margin-top: 40px; }
+  @media screen and (min-width: 750px) {
+    .nippo_histry {
+      display: none; } }
+
+.nippo_data {
+  width: 100%;
+  height: 120vh;
+  background-color: #ffcd03;
+  text-align: center;
+  color: #fff;
+  overflow: hidden; }
+  .nippo_data img {
+    width: 200px;
+    margin-top: 40px; }
+  .nippo_data .data-all {
+    width: 50%;
+    float: left;
+    text-align: center;
+    overflow: hidden; }
+    .nippo_data .data-all .data-circle {
+      font-size: 8px;
+      color: #fff; }
+  .nippo_data .data-job {
+    width: 50%;
+    float: left;
+    text-align: center;
+    overflow: hidden; }
+  .nippo_data .data-donload {
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    overflow: hidden; }
+  @media screen and (min-width: 750px) {
+    .nippo_data {
+      display: none; } }
+
+svg {
+  margin-top: 30px; }
 
 .pc-content {
   background-color: #fff;
@@ -252,3 +303,16 @@ body {
   @media screen and (max-width: 750px) {
     .pc-content {
       display: none; } }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black; }
+
+.tick text {
+  font-size: 12px; }
+
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2px; }

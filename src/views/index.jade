@@ -4,6 +4,8 @@ html(lang="ja")
     meta(charset="utf-8")
     link(href="css/style.css" rel="stylesheet" type="text/css")
     link(rel="shortcut icon" href="img/favicon.png")
+    script(src="http://d3js.org/d3.v3.min.js")
+    script(src="js/bundle.js")
     title nippoly 900 anniversary
   body
    div.top
@@ -21,10 +23,21 @@ html(lang="ja")
     p 「日報って面白そう」と思っていただけると幸いです。
     img.arrow-scroll(src="img/arrow_bg.png")
    div.nippo_histry
+    img.histry-title(src="img/histry-title.png")
+   div.nippo_data
+    img.nippo-data(src="img/nippo-data.png")
+    div.data-all
+     div.data-circle
+     p 日報を書いてる割合
+    div.data-job
+     div.data-circle2
+     p 日報メンバーの職種
+    div.data-download
+     div.data-line
+     p にっぽりーダウンロード推移
    div.pc-content
     img.pc-logo(src="img/nippoly-logo_white.png" alt="")
     img.pc-title(src="img/title.png" alt="")
     p.pc-first 当サイトをご覧いただきありがとうございます。
     p このサイトはスマートフォン専用です。
     p スマートフォンからアクセスしてください。
-   script(src="js/bundle.js")
